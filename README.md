@@ -1,5 +1,5 @@
 # LPCTechTest
-Repository for LPC tech test.
+Repository for LCP tech test.
 
 Summary:
 I have created a Data API for handling the Client related information. This API would then be consumed by a front end application to then be able to perform the associated actions. A front end has not been created for this rest api as part of this test.
