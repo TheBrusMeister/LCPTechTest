@@ -34,9 +34,29 @@ namespace LCPPulse.Data.Services
 
                 await connection.OpenAsync();
 
-                var result = await cmd.ExecuteScalarAsync() as ClientDetails;
+                var result = await cmd.ExecuteReaderAsync();
 
-                return result;
+                while (await result.ReadAsync())
+                {
+                    Guid? candidateId = result.GetGuid("ClientId");
+                    string firstName = result.GetString("FirstName");
+                    string surname = result.GetString("Surname");
+                    string phone = result.GetString("Phone");
+                    string company = result.GetString("Company");
+                    string address = result.GetString("Address");
+
+                    return new ClientDetails()
+                    {
+                        ClientId = candidateId,
+                        FirstName = firstName,
+                        Address = address,
+                        Company = company,
+                        Phone = phone,
+                        Surname = surname
+                    };
+                }
+
+                return null;
             }
             catch (Exception e)
             {
@@ -147,12 +167,37 @@ namespace LCPPulse.Data.Services
 
                 await connection.OpenAsync();
 
-                return await cmd.ExecuteScalarAsync() as List<ClientDetails>;
+                var result = await cmd.ExecuteReaderAsync();
+
+                var clientDetailsList = new List<ClientDetails>();
+
+                while (await result.ReadAsync())
+                {
+                    Guid? candidateId = result.GetGuid("ClientId");
+                    string firstName = result.GetString("FirstName");
+                    string surname = result.GetString("Surname");
+                    string phone = result.GetString("Phone");
+                    string company = result.GetString("Company");
+                    string address = result.GetString("Address");
+
+                    var clientDetails = new ClientDetails()
+                    {
+                        ClientId = candidateId,
+                        FirstName = firstName,
+                        Address = address,
+                        Company = company,
+                        Phone = phone,
+                        Surname = surname
+                    };
+
+                    clientDetailsList.Add(clientDetails);
+                }
+
+                return clientDetailsList;
             }
             catch (Exception e)
             {
-                //would normally use ILogger set up from the start up and log to somewhere like cloudwatch in AWS
-                Console.WriteLine(e.Message);
+               _logger.LogError(e.Message);
                 throw;
             }
         }

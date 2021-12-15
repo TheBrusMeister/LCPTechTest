@@ -92,7 +92,7 @@ namespace LCPPulse.Data.Controllers
             try
             {
                 var result = await _clientDetailsService.ListClients(employeeId);
-                return Ok(result);
+                return Ok(result) ;
             }
             catch (Exception e)
             {
