@@ -1,4 +1,4 @@
-# LPCTechTest
+# LCPTechTest
 Repository for LCP tech test.
 
 Summary:
