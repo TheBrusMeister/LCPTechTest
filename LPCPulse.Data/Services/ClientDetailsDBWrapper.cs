@@ -1,12 +1,12 @@
-﻿using LPCPulse.Data.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
+using LCPPulse.Data.Models;
 using Microsoft.Extensions.Logging;
 
-namespace LPCPulse.Data.Services
+namespace LCPPulse.Data.Services
 {
     public class ClientDetailsDBWrapper : IClientDetailsDBWrapper
     {

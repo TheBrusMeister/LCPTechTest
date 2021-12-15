@@ -1,9 +1,9 @@
-﻿using LPCPulse.Data.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using LCPPulse.Data.Models;
 
-namespace LPCPulse.Data.Services
+namespace LCPPulse.Data.Services
 {
     public interface IClientDetailsService
     {

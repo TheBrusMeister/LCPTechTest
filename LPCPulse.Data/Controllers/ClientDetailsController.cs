@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using LPCPulse.Data.Models;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using LPCPulse.Data.Services;
+using LCPPulse.Data.Models;
+using LCPPulse.Data.Services;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
-namespace LPCPulse.Data.Controllers
+namespace LCPPulse.Data.Controllers
 {
     public class ClientDetailsController : Controller
     {

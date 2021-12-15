@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8648E772-B734-41EB-BFC3-DC805E4A3C55}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LPCPulse.UnitTests", "LPCPulse.UnitTests\LPCPulse.UnitTests.csproj", "{7EE8406A-905B-4CC5-AA87-354932E96ACB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LCPPulse.UnitTests", "LPCPulse.UnitTests\LCPPulse.UnitTests.csproj", "{7EE8406A-905B-4CC5-AA87-354932E96ACB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LPCPulse.Data", "LPCPulse.Data\LPCPulse.Data.csproj", "{22EE08AE-3240-49BF-A8FF-AF5861D7643C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LCPPulse.Data", "LPCPulse.Data\LCPPulse.Data.csproj", "{22EE08AE-3240-49BF-A8FF-AF5861D7643C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

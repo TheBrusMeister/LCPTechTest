@@ -1,6 +1,4 @@
-using System;
-
-namespace LPCPulse.Data.Models
+namespace LCPPulse.Data.Models
 {
     public class ErrorViewModel
     {

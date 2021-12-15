@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LPCPulse.Data\LPCPulse.Data.csproj" />
+    <ProjectReference Include="..\LPCPulse.Data\LCPPulse.Data.csproj" />
   </ItemGroup>
 
 </Project>

@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using LPCPulse.Data.Models;
-using LPCPulse.Data.Services;
+using LCPPulse.Data.Models;
+using LCPPulse.Data.Services;
 using Moq;
 using Xunit;
 
